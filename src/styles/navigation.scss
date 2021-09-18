@@ -1,0 +1,43 @@
+@import "./variables.scss";
+.nav {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: $background-white;
+  width: 100%;
+  border-bottom: 1px solid $border-color-grey;
+
+  .nav-container {
+    padding: 1em 0 0.9em 0;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .search {
+      border: 1px solid rgb(163, 163, 163);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-width: 225px;
+      background-color: rgb(248, 246, 246);
+
+      .searchLogo {
+        width: 15px;
+        margin-right: 0.3em;
+        opacity: 0.5;
+      }
+
+      .search-span {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .search {
+    display: none !important;
+  }
+}
